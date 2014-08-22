@@ -4,6 +4,7 @@
 ## Installation
 
 Add the gem to your Gemfile.
+
     gem "dirty_delta", github: "micahroberson/dirty_delta"
 
 Run bundler.
@@ -12,10 +13,13 @@ Run bundler.
 ## Usage
 
 In your model, add a single line.
+
     class Timecard < ActiveRecord::Base
       acts_as_dirty_delta
     end
+
 Access delta's by the attribute methods.
+
     t = Timecard.create(hours: 8)
     t.hours = 10
     t.hours_delta == 2
