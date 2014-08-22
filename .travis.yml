@@ -5,4 +5,4 @@ before_script:
   - cd spec/dummy && bundle exec rake db:test:load && cd -
 addons:
   code_climate:
-    repo_token: 773e93fc966287cb92fbd35f82803f42fc07ed7314aeedc9bece850c83a479ea
+    repo_token: a0f0c1d5138d67657e2f8e50f601c0f761687570683f25dc6ab42bfde6025932
